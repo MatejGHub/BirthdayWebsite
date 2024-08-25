@@ -1,0 +1,33 @@
+.text-appear {
+  animation: text-appear 1s forwards;
+  animation-play-state: paused;
+  opacity: 0;
+}
+
+.text-appear:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.text-appear:nth-child(2) {
+  animation-delay: 2.3s;
+}
+
+.text-appear:nth-child(3) {
+  animation-delay: 4.3s;
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.text-appear.trigger {
+  opacity: 0;
+  animation-play-state: running;
+}
