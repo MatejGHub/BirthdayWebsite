@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const images = [
   { src: "path/to/image1.jpg", year: "2020" },
-  { src: "path/to/image2.jpg", year: "2021" },
+  { src: "path/to/image2.jpg", year: "2022" },
   { src: "path/to/image3.jpg", year: "2022" }
 ];
 
