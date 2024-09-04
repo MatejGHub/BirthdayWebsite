@@ -15,12 +15,12 @@ const FirstPage = () => {
         <header className="bg-gradient-to-r from-orange-500 to-orange-700  flex flex-col justify-center items-center w-full h-screen">
           <div className="flex d-flex flex-row justify-center items-center">
             <h1 className="katja-title font-bold text-5xl bg-gradient-to-r from-red-200 to-white text-transparent bg-clip-text p-3 text-center leading-snug">
-              Danes je tvoj posebni dan
+              Katja, danes je tvoj dan!
             </h1>
           </div>
 
           <span className="button-click bg-gradient-to-r from-red-200 to-white text-transparent bg-clip-text p-3 text-center opacity-0">
-            Klikni na gumb spodaj
+            Klikni spodaj
           </span>
         </header>
 

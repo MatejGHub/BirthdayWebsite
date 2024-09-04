@@ -4,6 +4,18 @@
   opacity: 0;
 }
 
+.carousel-appear {
+  animation: carousel-appear 1s forwards;
+  animation-play-state: paused;
+  opacity: 0;
+}
+
+.button-appear {
+  animation: button-appear 1s forwards;
+  animation-play-state: paused;
+  opacity: 0;
+}
+
 .text-appear:nth-child(1) {
   animation-delay: 0.3s;
 }
@@ -14,6 +26,14 @@
 
 .text-appear:nth-child(3) {
   animation-delay: 4.3s;
+}
+
+.carousel-appear {
+  animation-delay: 7.7s;
+}
+
+.button-appear {
+  animation-delay: 10.7s;
 }
 
 @keyframes text-appear {
@@ -27,7 +47,39 @@
   }
 }
 
+@keyframes carousel-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes button-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.button-appear.trigger {
+  opacity: 0;
+  animation-play-state: running;
+}
+
 .text-appear.trigger {
+  opacity: 0;
+  animation-play-state: running;
+}
+
+.carousel-appear.trigger {
   opacity: 0;
   animation-play-state: running;
 }
@@ -37,5 +89,15 @@
 }
 
 .downarrowcontainer {
-  top: 70px;
+  right: 60%;
+  bottom: 10%;
+}
+
+.carousel-container {
+}
+
+.secondpageimage {
+  width: 320px;
+  height: 440px;
+  object-fit: contain;
 }
